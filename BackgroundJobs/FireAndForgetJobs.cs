@@ -12,7 +12,7 @@ namespace HangFire.API.BackgroundJobs
 
         public static void EmailSendToUserJob(MailRequest mailRequest)
         {
-            Hangfire.BackgroundJob.Enqueue<IMailService>(x=>x.SendEmailAsync(mailRequest));
+            Hangfire.BackgroundJob.Enqueue<IMailService>(x => x.SendEmailAsync(mailRequest));
         }
 
     }

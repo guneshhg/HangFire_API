@@ -22,5 +22,18 @@ namespace HangFire.API.Controllers
             return NoContent();
         }
 
+        [HttpGet]
+        public IActionResult Picture()
+        {
+
+            //string jobId = DelayedJobs.AddWaterMarkJob();
+            return Ok();
+
+        }
+
+
+
+
+
     }
 }

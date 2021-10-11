@@ -31,7 +31,9 @@ namespace HangFire.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
+            
             services.AddTransient<IMailService, Services.MailService>();
+            
 
             services.AddHangfire(config => config.UseSqlServerStorage(Configuration.GetConnectionString("sqlConnection")));
 

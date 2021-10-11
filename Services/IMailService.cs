@@ -9,5 +9,6 @@ namespace HangFire.API.Services
     public interface IMailService
     {
         Task SendEmailAsync(MailRequest mailRequest);
+     
     }
 }
